@@ -188,6 +188,6 @@ Final_WebExport_CLEANER <- Final_WebExport_CLEANER[order(Final_WebExport_CLEANER
 Final_WebExport_CLEANER$Date.of.Manufacture <- format(ymd(Final_WebExport_CLEANER$Date.of.Manufacture), format = "%m/%d/%Y")
 
 #Writes the Final cleaned up version of Looker export with the dates processed and producer values filled in. 
-write.csv(Final_WebExport_CLEAN, "Final_WebExport.csv")
+write.csv(Final_WebExport_CLEANER, "Final_WebExport_CLEAN.csv")
 
 #write.csv(FIX_THESE_AFTER, "COA_FIX.csv")
